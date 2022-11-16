@@ -4,7 +4,7 @@ dotenv.config();
 import express from "express";
 
 const app = express();
-const port = 4000;
+// const port = 4000;
 // import {getData ,linkdown ,electric} from './fetchImage.js'
 const url_line_notification = "https://notify-api.line.me/api/notify";
 
@@ -13,7 +13,8 @@ app.get("/", (req, res) => {
   res.send("Send Line Notify is Successfully.");
 });
 
-app.listen(port, "0.0.0.0", () => {
+
+app.listen(process.env.PORT || 4000, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
