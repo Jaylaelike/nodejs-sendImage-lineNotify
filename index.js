@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 
 
 app.listen(process.env.PORT || 4000, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Example app listening ...`);
 });
 
 async function getData() {
