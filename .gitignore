@@ -1,7 +1,6 @@
 node_modules/
 .cache/
 public
-.env
 .vercel
 .readme
 .DS_Store
